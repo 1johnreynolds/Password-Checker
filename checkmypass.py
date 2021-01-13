@@ -38,10 +38,7 @@ def main(args):
     password_file.close()
     return 'Program Complete.'
   except FileNotFoundError as err:
-    print('You must input an existing .txt file.')
-      
-
-  
+    print(f'{err}\n You must input an existing .txt file.')
 
 if __name__ == '__main__':
   sys.exit(main(sys.argv[1:]))
