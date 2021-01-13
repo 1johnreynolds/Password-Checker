@@ -3,7 +3,7 @@ import hashlib
 import sys
 """
 Run from command line using:
-  python3 checkmypass.py 'password'
+python3 checkmypass.py 'password'
 """
 def request_api_data(query_char):
   url = 'https://api.pwnedpasswords.com/range/' + query_char
@@ -42,4 +42,3 @@ def main(args):
 
 if __name__ == '__main__':
   sys.exit(main(sys.argv[1:]))
-  
